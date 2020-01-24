@@ -29,7 +29,7 @@ void setup() {
 		;
 	}
 	int a = 12;
-	// Now set up two tasks to run independently.
+	
 	xTaskCreate( Task1, "task1", 200, (void*)a, tskIDLE_PRIORITY, &myTask1Handle);
 	vTaskStartScheduler();	
 	Serial.println("Setup finished");
