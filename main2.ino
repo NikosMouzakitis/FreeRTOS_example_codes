@@ -5,7 +5,7 @@ TaskHandle_t myTask1Handle = NULL;
 void Task1( void *p);
 
 void Task1( void *p) {
-	TickTime_t myLastUnblock;v	
+	TickType_t myLastUnblock;v	
 	int count = (int *) p;;
 	myLastUnblock = xTaskGetTickCount();
 	
