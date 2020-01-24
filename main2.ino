@@ -11,8 +11,8 @@ void Task1( void *p) {
 	
 	while(1) {
 		Serial.println(count++);
-		//vTaskDelay(1000*configTICK_RATE_HZ/1000); //1sec delay.
-		vTaskDelayUntil(&myLastUnblock, 1000*configTICK_RATE_HZ/1000); //1sec delay.
+		//vTaskDelay(1000*configTICK_RATE_HZ/1000); //at least 1sec delay.
+		vTaskDelayUntil(&myLastUnblock, 1000*configTICK_RATE_HZ/1000); //wait exactly 1sec delay.
 
 		if(count == 20) {
 			// after this task is deleted.(no more print outs)
