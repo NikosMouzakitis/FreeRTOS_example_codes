@@ -9,7 +9,7 @@ void Task1( void *p) {
 	int count = (int *) p;;
 	while(1) {
 		Serial.println(count++);
-		vTaskDelay(100); //1sec delay.
+		vTaskDelay(100); //delay based on tick.
 
 
 		if(count == 20) {
