@@ -9,6 +9,6 @@ AVRDUDE_MCU	= atmega2560
 ######
 
 
-
+///for the Makefile we use the Sudhar 's Makefile, can be found on Github, for programming throught the command-line.
 include /home/nicko/Downloads/arduino-1.8.5/Arduino-Makefile-master/Arduino.mk
 
