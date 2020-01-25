@@ -34,12 +34,13 @@ void myISR_Handler(void) {
 	BaseType_t yieldRequired;
 	yieldRequired = xTaskResumeFromISR(myIntTaskHandle);
 
+	/* works with this commented, but should somehow fix it and work with the function portYIELD_FROM_ISR().
 	
 	if(yieldRequired == pdTRUE) {
 		portYIELD_FROM_ISR(yieldRequired);
 	} else
-		Serial.println("Unable to resume from ISR\n");
-
+		Serial.println("Unable to context-switch from ISR\n");
+	*/
 }
 void setup() {
 	
